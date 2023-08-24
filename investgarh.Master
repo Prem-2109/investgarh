@@ -1,0 +1,308 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="investgarh.Master.cs" Inherits="investchattigarh.SiteMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <link rel="icon" type="image/png" href="images/logo/Web-logo.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>INVESTGARH CHHATTIGARH</title>
+    <link href="css/plugins.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/lefttoright.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="css/Sector.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+        </asp:ScriptManager>
+
+
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+   <section class="bg-clr-lite-gold" id="newsroom-hide">
+        <div class="container-fullscreen marginleftright-6">
+            <div class="h4 mb-4">NEWSROOM</div>
+            <div class="carousel team-members team-members-shadow flickity-enabled is-draggable carousel-loaded" data-dots="false" data-margin="30" data-items="3">
+
+                <div class="polo-carousel-item" aria-hidden="true">
+                    <div class="row">
+                        <div class="col-lg-6 m-auto">
+                            
+                            <img src="images/news-center/News1.jpg" />
+                        </div>
+                        
+                        <div class="col-lg-6">
+                            <div class="">
+                                <span class="font-sm-ex">Chhattisgarh CM Announces Investgarh Chhattisgarh 2022, Global Investor Meet with WEEXPOINDIA</span>
+
+                            </div>
+
+                            <div class="p-t-30">
+                                <a class="btn" href="newsroom.html" target="_blank">Know more</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="polo-carousel-item is-selected" aria-hidden="true">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="images/news-center/News4.jpg" />
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="">
+
+                                <span class="font-sm-ex">
+                                    Chhattisgarh signs MoUs with IIMR, aims to become millet hub
+                                </span>
+
+                            </div>
+
+                            <div class=" p-t-60 pad-top-80">
+                                <a class="btn" href="newsroom.html" target="_blank">Know more</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="polo-carousel-item ">
+                    <div class="row">
+                        <div class="col-lg-6 ">
+                            <img src="images/news-center/News5.jpg" />
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="">
+                                <span class="font-sm-ex">Chhattisgarh to formulate film policy-2021</span>
+
+                            </div>
+                            <br />
+                            <br />
+                            <div class="p-t-30">
+                                <a class="btn" href="newsroom.html" target="_blank">Know more</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="polo-carousel-item ">
+                    <div class="row">
+                        <div class="col-lg-6 ">
+                            <img src="images/news-center/News6.jpg" />
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="">
+                                <span class="font-sm-ex">MOU signed between Govt. of Chhattisgarh and Gowri Power Tech Pvt Ltd</span>
+
+                            </div>
+                            <br />
+                            <br />
+                            <div class="">
+                                <a class="btn" href="newsroom.html" target="_blank">Know more</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="polo-carousel-item ">
+                    <div class="row">
+                        <div class="col-lg-6 ">
+                            <img src="images/news-center/News7.jpg" />
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="">
+                                <span class="font-sm-ex">MOU signed between Govt. of Chhattisgarh and Casfish International Pvt Ltd</span>
+
+                            </div>
+                            <br />
+                            <br />
+                            <div class="">
+                                <a class="btn" href="newsroom.html" target="_blank">Know more</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="polo-carousel-item ">
+                    <div class="row">
+                        <div class="col-lg-6 ">
+                            <img src="images/news-center/News2.jpg" />
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="">
+                                <span class="font-sm-ex">Chhattisgarh CM inaugurates over 300 development projects at PWD dept</span>
+
+                            </div>
+                            <br />
+                            <br />
+                            <div class="">
+                                <a class="btn" href="newsroom.html" target="_blank">Know more</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="polo-carousel-item ">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="images/news-center/News3.jpg" />
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="">
+                                <span class="font-sm-ex">Chhattisgarh: Ease of doing business puts the state on the sixth rank in the country</span>
+
+                            </div>
+                            <br />
+                            <br />
+                            <div class="">
+                                <a class="btn" href="newsroom.html" target="_blank">Know more</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="p-t-40 p-b-30 bg-clr-lite-white">
+        <div class="copyright-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4">
+
+                        <div class="social-icons social-icons-colored float-left">
+                            <ul>
+
+                                <li class="social-facebook"><a href="https://www.facebook.com/Investgarh-Chhattisgarh-102160745542607" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="social-instagram"><a href="https://www.instagram.com/investgarh_chhattisgarh/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                <li class="social-twitter"><a href="https://twitter.com/IC_Summit2022" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                <li class="social-linkedin"><a href="https://www.linkedin.com/company/investgarh-chhattisgarh" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="copyright-text text-center">All Rights Reserved.© 2021 INVESTGARH CHHATTISGARH</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <%-- <div class="womensdayawrap">
+        <div class="womendaycontent conthgt">
+            <p>
+                <!--   Heritage Foods was founded to create and share wealth ethically among the farming community in a structured manner<br><br>
+          The farming community was fragmented with no guidance and voice<br><br>
+          I am proud we have achieved our objective with our vision and mission for economic growth<br><br>
+          I promise as trustees our moral compass will remain to true north always <br><br>-->
+                Life will have plenty of good and evil<br>
+                Life is winning of good over evil<br>
+                <br>
+                Vijaya Dashami is for all good not evil<br>
+                Vijaya Dashami is for victory over evil<br>
+                <br>
+                Vijaya Dashami is for all good to cherish<br>
+                Vijaya Dashami is for all bad to perish<br>
+                <br>
+                VIJAYA DASHAMI SUBHAKANKSHALU
+
+		  <br>
+                <b>Smt. Bhuvaneswari Nara</b><br>
+                Vice Chairperson &amp; Managing Director
+            </p>
+
+        </div>
+        <div class="womensdayawrapsec">
+            <span>
+                <img src="https://www.heritagefoods.in/static/images/team/bhuvaneshawari.png" class="img-responsive" alt=""/>
+            </span>
+            <span>
+                <h2>VIJAYA DASHAMI 2021
+                </h2>
+
+                <p>Smt. Bhuvaneswari Nara</p>
+            </span>
+            <div class="plusicon shake minusicon"></div>
+        </div>
+
+    </div>
+
+
+    <style>
+        .womensdayawrap {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            z-index: 99999;
+            width: 380px;
+        }
+
+        .womendaycontent {
+            background: #fff;
+            height: 0;
+            transition: all 0.5s ease-in-out;
+            box-shadow: 0px 0px 35px hsl(0deg 0% 0% / 10%);
+        }
+
+        .womensdayawrapsec {
+            text-align: center;
+        }
+
+        .womensdayawrapsec {
+            position: relative;
+            background: #4aa147;
+            padding: 10px;
+            box-shadow: 0px 0px 35px hsl(0deg 0% 0% / 10%);
+            cursor: pointer;
+            color: #fff;
+        }
+    </style>--%>
+
+    <a id="scrollTop" style="bottom: 26px; opacity: 1; z-index: 199;"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/functions.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 3000,
+            once: true,
+        });
+        $('#id_hoverhide').mouseenter(function () {
+            $('#text_hide').hide();
+        });
+        $('#id_hoverhide').mouseleave(function () {
+            $('#text_hide').show();
+        });
+    </script>
+</body>
+</html>

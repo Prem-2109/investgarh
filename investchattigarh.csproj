@@ -1,0 +1,900 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52483E6A-BE53-4F7A-AC56-A205360400F9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>investchattigarh</RootNamespace>
+    <AssemblyName>investchattigarh</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44399</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>packages\AspNet.ScriptManager.bootstrap.3.4.1\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>packages\AspNet.ScriptManager.jQuery.3.4.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="agriculture.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="contactus.html" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="covid19guide.aspx" />
+    <Content Include="css\index.css" />
+    <Content Include="css\lefttoright.css" />
+    <Content Include="css\plugins.css" />
+    <Content Include="css\Sector.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="detailnews-1.html" />
+    <Content Include="detailnews-2.html" />
+    <Content Include="detailnews-3.html" />
+    <Content Include="detailnews-4.html" />
+    <Content Include="detailnews-5.html" />
+    <Content Include="detailnews-6.html" />
+    <Content Include="detailnews.html" />
+    <Content Include="explore.aspx" />
+    <Content Include="fabrication.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="font\demo.html" />
+    <Content Include="font\stylesheet.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="greenenergy.aspx" />
+    <Content Include="icsummit.html" />
+    <Content Include="images\banner\CovidGuidebanner.jpg" />
+    <Content Include="images\banner\explore-ban.png" />
+    <Content Include="images\banner\explore-baner-1.jpg" />
+    <Content Include="images\banner\explore-banner-img.jpg" />
+    <Content Include="images\banner\explore-banner.jpg" />
+    <Content Include="images\banner\ic-ban-1.jpg" />
+    <Content Include="images\banner\ic-ban-2.jpg" />
+    <Content Include="images\banner\ic-ban-3.jpg" />
+    <Content Include="images\banner\ic-ban-4.jpg" />
+    <Content Include="images\banner\ic-ban-5.jpg" />
+    <Content Include="images\banner\IC-Sum-map.jpg" />
+    <Content Include="images\banner\ic-summit.jpg" />
+    <Content Include="images\banner\new-room-detail.jpg" />
+    <Content Include="images\banner\privacy-policy.jpg" />
+    <Content Include="images\banner\webinar-banner.jpeg" />
+    <Content Include="images\banner\Webinar-Banner.jpg" />
+    <Content Include="images\bg-images\Pop-up.jpg" />
+    <Content Include="images\bg-images\Postponed-Banner.jpg" />
+    <Content Include="images\covid-image\book-1.png" />
+    <Content Include="images\covid-image\cases.png" />
+    <Content Include="images\covid-image\mask.png" />
+    <Content Include="images\covid-image\safetyshield.png" />
+    <Content Include="images\covid-image\socialdistance.png" />
+    <Content Include="images\covid-image\testing.png" />
+    <Content Include="images\covidicons\CovidIcon1.png" />
+    <Content Include="images\covidicons\CovidIcon10.png" />
+    <Content Include="images\covidicons\CovidIcon2.png" />
+    <Content Include="images\covidicons\CovidIcon3.png" />
+    <Content Include="images\covidicons\CovidIcon4.png" />
+    <Content Include="images\covidicons\CovidIcon5.png" />
+    <Content Include="images\covidicons\CovidIcon6.png" />
+    <Content Include="images\covidicons\CovidIcon7.png" />
+    <Content Include="images\covidicons\CovidIcon8.png" />
+    <Content Include="images\covidicons\CovidIcon9.png" />
+    <Content Include="images\event-highlight\Event-highlights-Experts.jpg" />
+    <Content Include="images\event-highlight\Event-highlights-Images1.jpg" />
+    <Content Include="images\event-highlight\Event-highlights-Images2.jpg" />
+    <Content Include="images\event-highlight\Event-highlights-Images3.jpg" />
+    <Content Include="images\event-highlight\Event-highlights-Images3_1.jpg" />
+    <Content Include="images\event-highlight\Event-highlights-Land.jpg" />
+    <Content Include="images\event-highlight\Event-highlights-Support.jpg" />
+    <Content Include="images\Events\21.png" />
+    <Content Include="images\Events\22.png" />
+    <Content Include="images\Events\23.png" />
+    <Content Include="images\Events\24.png" />
+    <Content Include="images\Events\25.png" />
+    <Content Include="images\Events\26.png" />
+    <Content Include="images\gdp\11_1%404x.png" />
+    <Content Include="images\gdp\12%404x.png" />
+    <Content Include="images\gdp\13%404x.png" />
+    <Content Include="images\gdp\14%404x.png" />
+    <Content Include="images\gdp\15%404x.png" />
+    <Content Include="images\gdp\16%404x.png" />
+    <Content Include="images\gdp\17%404x.png" />
+    <Content Include="images\gdp\18%404x.png" />
+    <Content Include="images\gdp\19%404x.png" />
+    <Content Include="images\home-banner-2.png" />
+    <Content Include="images\Home-Page-lanuch.jpg" />
+    <Content Include="images\bg-images\backgrd-cm.jpg" />
+    <Content Include="images\bg-images\backgrd-img.jpg" />
+    <Content Include="images\bg-images\cm-bg.jpg" />
+    <Content Include="images\bg-images\section-2.jpg" />
+    <Content Include="images\Hover-asset\AgriSector.png" />
+    <Content Include="images\Hover-asset\Energy.png" />
+    <Content Include="images\Hover-asset\hoverimg-1.png" />
+    <Content Include="images\Hover-asset\hoverimg-2.png" />
+    <Content Include="images\Hover-asset\hoverimg-3.png" />
+    <Content Include="images\Hover-asset\hoverimg-4.png" />
+    <Content Include="images\Hover-asset\Industry.jpg" />
+    <Content Include="images\Hover-asset\Industry.png" />
+    <Content Include="images\Hover-asset\Mining.png" />
+    <Content Include="images\Hover-asset\ThreeDays.png" />
+    <Content Include="images\hover-bg\Agri-BG-Sector.jpg" />
+    <Content Include="images\hover-bg\Blure-BG.jpg" />
+    <Content Include="images\hover-bg\Education-BG.jpg" />
+    <Content Include="images\hover-bg\hover-ic\business-collaborations.jpg" />
+    <Content Include="images\hover-bg\hover-ic\Entrepreneurs.jpg" />
+    <Content Include="images\hover-bg\hover-ic\Face-to-Face-Meetings.jpg" />
+    <Content Include="images\hover-bg\hover-ic\potential-investors.jpg" />
+    <Content Include="images\hover-bg\Hydropower.jpg" />
+    <Content Include="images\hover-bg\Mining.jpg" />
+    <Content Include="images\hover-bg\Toursim.jpg" />
+    <Content Include="images\hover-bg\WInd-power.jpg" />
+    <Content Include="images\icon-four-sector\agri-icons\Assisting.png" />
+    <Content Include="images\icon-four-sector\agri-icons\Biotechnology.png" />
+    <Content Include="images\icon-four-sector\agri-icons\Container-Depots.png" />
+    <Content Include="images\icon-four-sector\agri-icons\Demand-side-drivers.png" />
+    <Content Include="images\icon-four-sector\agri-icons\Digital-innovation.png" />
+    <Content Include="images\icon-four-sector\agri-icons\Electronics-Manufacturing.png" />
+    <Content Include="images\icon-four-sector\agri-icons\FDI-in-Forestry-Sector.png" />
+    <Content Include="images\icon-four-sector\agri-icons\Food-Park.png" />
+    <Content Include="images\icon-four-sector\agri-icons\FPO.png" />
+    <Content Include="images\icon-four-sector\agri-icons\Government-Support.png" />
+    <Content Include="images\icon-four-sector\agri-icons\Industrial-Infrastructure.png" />
+    <Content Include="images\icon-four-sector\agri-icons\Land-Bank.png" />
+    <Content Include="images\icon-four-sector\agri-icons\MSME Technology Centre.png" />
+    <Content Include="images\icon-four-sector\agri-icons\ODOP.png" />
+    <Content Include="images\icon-four-sector\agri-icons\Projects.png" />
+    <Content Include="images\icon-four-sector\agri-icons\Sericulture.png" />
+    <Content Include="images\icon-four-sector\agri-icons\solar-cities.png" />
+    <Content Include="images\icon-four-sector\agri-icons\Solar-Park.png" />
+    <Content Include="images\icon-four-sector\agri-icons\Startup-ecosystem.png" />
+    <Content Include="images\icon-four-sector\agri-icons\Wind.png" />
+    <Content Include="images\icon-four-sector\Ethnol.png" />
+    <Content Include="images\icon-four-sector\Icon-Hov-Border.jpg" />
+    <Content Include="images\icon-four-sector\Icon-Hov-Border.png" />
+    <Content Include="images\icon-four-sector\Icon-Hov-Filght.png" />
+    <Content Include="images\icon-four-sector\Icon-Hov-Flight.jpg" />
+    <Content Include="images\icon-four-sector\Icon-Hov-Power.png" />
+    <Content Include="images\icon-four-sector\Icon-Hov-Sea-.jpg" />
+    <Content Include="images\icon-four-sector\Icon-Hov-SEA-road.png" />
+    <Content Include="images\icon-four-sector\Icon-Power.png" />
+    <Content Include="images\icon-four-sector\icon-white\Automobile-industry.png" />
+    <Content Include="images\icon-four-sector\icon-white\Carbon.png" />
+    <Content Include="images\icon-four-sector\icon-white\Digital-innovation.png" />
+    <Content Include="images\icon-four-sector\icon-white\Farmer-Producer-Organisations.png" />
+    <Content Include="images\icon-four-sector\icon-white\FDI-in-Forestry-Sector.png" />
+    <Content Include="images\icon-four-sector\icon-white\Government-Support.png" />
+    <Content Include="images\icon-four-sector\icon-white\Grid-connected-Rooftop.png" />
+    <Content Include="images\icon-four-sector\icon-white\Gst.png" />
+    <Content Include="images\icon-four-sector\icon-white\Mega-Food-parks.png" />
+    <Content Include="images\icon-four-sector\icon-white\Mine-1.png" />
+    <Content Include="images\icon-four-sector\icon-white\Plantation-for-Sericulture.png" />
+    <Content Include="images\icon-four-sector\icon-white\Replace.png" />
+    <Content Include="images\icon-four-sector\icon-white\Single-Window-Clearance-white.png" />
+    <Content Include="images\icon-four-sector\icon-white\solar-icon.png" />
+    <Content Include="images\icon-four-sector\icon-white\Startup-ecosystem.png" />
+    <Content Include="images\icon-four-sector\icon-white\Steel-and-al.png" />
+    <Content Include="images\icon-four-sector\icon-white\Steel-Production.png" />
+    <Content Include="images\icon-four-sector\Transport.jpg" />
+    <Content Include="images\icon-hover\Empty.png" />
+    <Content Include="images\icon-hover\Icons-01.png" />
+    <Content Include="images\icon-hover\Icons-02.png" />
+    <Content Include="images\icon-hover\Icons-04.png" />
+    <Content Include="images\icon-hover\Icons-05.png" />
+    <Content Include="images\icon-hover\Icons-06.png" />
+    <Content Include="images\icon-hover\Icons-07.png" />
+    <Content Include="images\icon-hover\Icons-08.png" />
+    <Content Include="images\icon-hover\Icons-09.png" />
+    <Content Include="images\icon-hover\Icons-10.png" />
+    <Content Include="images\icon-hover\Icons-11.png" />
+    <Content Include="images\icon-logo\arrow-down.png" />
+    <Content Include="images\icon-logo\arrow-left.png" />
+    <Content Include="images\icon-logo\arrow-right.png" />
+    <Content Include="images\icon-logo\chart-gpd.png" />
+    <Content Include="images\icon-logo\gdp-logo.png" />
+    <Content Include="images\icon-logo\logo-chhatishgarh.png" />
+    <Content Include="images\icon-logo\video-play.png" />
+    <Content Include="images\icons-new\Agri.png" />
+    <Content Include="images\icons-new\Edu.png" />
+    <Content Include="images\icons-new\educational-institutes.png" />
+    <Content Include="images\icons-new\Fixed-timeline.png" />
+    <Content Include="images\icons-new\Grievance.png" />
+    <Content Include="images\icons-new\Icon-Hov-Border.png" />
+    <Content Include="images\icons-new\Icon-Hov-Filght.png" />
+    <Content Include="images\icons-new\Icon-Hov-Power.png" />
+    <Content Include="images\icons-new\Icon-Hov-SEA-road.png" />
+    <Content Include="images\icons-new\Industrial-Parks.png" />
+    <Content Include="images\icons-new\Logisticsupport.png" />
+    <Content Include="images\icons-new\Online-Application-Form.png" />
+    <Content Include="images\icons-new\RAJIV-GANDHIKISANNYAY.png" />
+    <Content Include="images\icons-new\RBI.png" />
+    <Content Include="images\icons-new\Road-Bri.png" />
+    <Content Include="images\icons-new\sector-development.png" />
+    <Content Include="images\icons-new\Service-charter.png" />
+    <Content Include="images\icons-new\Single-Sign-On-ID.png" />
+    <Content Include="images\icons-new\Single-Sign-On.png" />
+    <Content Include="images\icons-new\Smart-city-2.png" />
+    <Content Include="images\icons-new\Smart-City.png" />
+    <Content Include="images\icons-new\Top-Achiever.png" />
+    <Content Include="images\icons-new\Track-status.png" />
+    <Content Include="images\Icons\Design-&amp;-Con.png" />
+    <Content Include="images\Icons\Education.png" />
+    <Content Include="images\Icons\Enegry.png" />
+    <Content Include="images\Icons\Entertainment.png" />
+    <Content Include="images\Icons\experience.png" />
+    <Content Include="images\Icons\Finacial-service.png" />
+    <Content Include="images\Icons\Food.png" />
+    <Content Include="images\Icons\goglobal.png" />
+    <Content Include="images\Icons\Hydropower.png" />
+    <Content Include="images\Icons\loudspeaker.png" />
+    <Content Include="images\Icons\Manufacture.png" />
+    <Content Include="images\Icons\Mine.png" />
+    <Content Include="images\Icons\threedays.png" />
+    <Content Include="images\Icons\Tourism.png" />
+    <Content Include="images\Icons\Wind-POwer.png" />
+    <Content Include="images\investor-logos\ACC.jpg" />
+    <Content Include="images\investor-logos\ambuja-cement.jpg" />
+    <Content Include="images\investor-logos\Amrapali.jpg" />
+    <Content Include="images\investor-logos\Apollo-hospitals.jpg" />
+    <Content Include="images\investor-logos\Avinash .jpg" />
+    <Content Include="images\investor-logos\Bhushan.jpg" />
+    <Content Include="images\investor-logos\Essar.jpg" />
+    <Content Include="images\investor-logos\Fortis.jpg" />
+    <Content Include="images\investor-logos\GMR.jpg" />
+    <Content Include="images\investor-logos\Godawari-Power-and-Ispat-limited.jpg" />
+    <Content Include="images\investor-logos\Grasim---Aditya-Birla-group.jpg" />
+    <Content Include="images\investor-logos\Hyatt.jpg" />
+    <Content Include="images\investor-logos\IBM.jpg" />
+    <Content Include="images\investor-logos\Jaypee-group.jpg" />
+    <Content Include="images\investor-logos\Jindal-Power.jpg" />
+    <Content Include="images\investor-logos\JSW.jpg" />
+    <Content Include="images\investor-logos\KSK.jpg" />
+    <Content Include="images\investor-logos\Lafarge.jpg" />
+    <Content Include="images\investor-logos\Monnet.jpg" />
+    <Content Include="images\investor-logos\Mphasis.jpg" />
+    <Content Include="images\investor-logos\NTPC.jpg" />
+    <Content Include="images\investor-logos\Sail.jpg" />
+    <Content Include="images\investor-logos\Sarada-Energy-and-Minerals.jpg" />
+    <Content Include="images\investor-logos\Taj-hotels,-resorts-and-palaces.jpg" />
+    <Content Include="images\investor-logos\Tata-Steel.jpg" />
+    <Content Include="images\investor-logos\Ultratech-cement.jpg" />
+    <Content Include="images\investor-logos\Vedanta.jpg" />
+    <Content Include="images\investor-logos\Wipro.jpg" />
+    <Content Include="images\line-map.png" />
+    <Content Include="images\logo\Web-logo.png" />
+    <Content Include="images\metal\Atmanirbhar-Bharat-Abhiyan.png" />
+    <Content Include="images\metal\Clearance.png" />
+    <Content Include="images\metal\Cost-advantage.png" />
+    <Content Include="images\metal\government-policies.png" />
+    <Content Include="images\metal\icon-govt.png" />
+    <Content Include="images\metal\Map-BG.png" />
+    <Content Include="images\metal\Mining-Policy-BG.png" />
+    <Content Include="images\metal\Rising-demand.png" />
+    <Content Include="images\metal\The-line.png" />
+    <Content Include="images\metal\Unexplored-mines.png" />
+    <Content Include="images\news-center\eod-cm-image.jpg" />
+    <Content Include="images\news-center\film-formulate.PNG" />
+    <Content Include="images\news-center\IC-Newsroom-banner.jpg" />
+    <Content Include="images\news-center\launch-1.jpeg" />
+    <Content Include="images\news-center\launch-1.jpg" />
+    <Content Include="images\news-center\launch-2.jpeg" />
+    <Content Include="images\news-center\launch-3.jpeg" />
+    <Content Include="images\news-center\MOU Post 2.jpg" />
+    <Content Include="images\news-center\MOu-Post2.jpg" />
+    <Content Include="images\news-center\mou-sign-gowri.jpeg" />
+    <Content Include="images\news-center\MoUs.jpg" />
+    <Content Include="images\news-center\news-center-2.jpg" />
+    <Content Include="images\news-center\news-center.jpg" />
+    <Content Include="images\news-center\News-PWD-20-sep.jpg" />
+    <Content Include="images\news-center\News1.jpg" />
+    <Content Include="images\news-center\News2.jpg" />
+    <Content Include="images\news-center\News3.jpg" />
+    <Content Include="images\news-center\News4.jpg" />
+    <Content Include="images\news-center\News5.jpg" />
+    <Content Include="images\news-center\News6.jpg" />
+    <Content Include="images\news-center\News7.jpg" />
+    <Content Include="images\news-center\Newsroom-1.jpg" />
+    <Content Include="images\news-center\Newsroom-Banner-2.jpg" />
+    <Content Include="images\news-center\Newsroom-Banner-3.jpg" />
+    <Content Include="images\news-center\Newsroom-Banner-4.jpg" />
+    <Content Include="images\partners\CG-Logo.png" />
+    <Content Include="images\partners\CSIDC-LOGO.png" />
+    <Content Include="images\partners\Sipb-logo.png" />
+    <Content Include="images\partners\Weexpoindia-Logo.png" />
+    <Content Include="images\pdf\PDF-4.jpg" />
+    <Content Include="images\pdf\PDF1.jpg" />
+    <Content Include="images\pdf\PDF2.jpg" />
+    <Content Include="images\pdf\PDF3.jpg" />
+    <Content Include="images\sector-image\DESIGN-AND-CONSTRUCTION.jpg" />
+    <Content Include="images\sector-image\DESIGN-AND.png" />
+    <Content Include="images\sector-image\DESIGN-AND_Color.png" />
+    <Content Include="images\sector-image\EDUCATION.jpg" />
+    <Content Include="images\sector-image\Education.png" />
+    <Content Include="images\sector-image\Education_Color.png" />
+    <Content Include="images\sector-image\energryback.png" />
+    <Content Include="images\sector-image\Energy 2.png" />
+    <Content Include="images\sector-image\ENERGY.jpg" />
+    <Content Include="images\sector-image\energy.png" />
+    <Content Include="images\sector-image\energycolor.png" />
+    <Content Include="images\sector-image\Energy_Color.png" />
+    <Content Include="images\sector-image\ENTERTAINMENT-AND-CULTURE.jpg" />
+    <Content Include="images\sector-image\ENTERTAINMENT-AND-CULTURE.png" />
+    <Content Include="images\sector-image\ENTERTAINMENT-AND-CULTURE_Color.png" />
+    <Content Include="images\sector-image\FINANCIAL-SERVICES.jpg" />
+    <Content Include="images\sector-image\FINANCIAL-SERVICES.png" />
+    <Content Include="images\sector-image\FINANCIAL-SERVICES_Color.png" />
+    <Content Include="images\sector-image\FOOD.jpg" />
+    <Content Include="images\sector-image\fOOD.png" />
+    <Content Include="images\sector-image\fOOD_Color.png" />
+    <Content Include="images\sector-image\happening-sec\sector-1-hp.png" />
+    <Content Include="images\sector-image\happening-sec\sector-2-hp.png" />
+    <Content Include="images\sector-image\happening-sec\sector-3-hp.png" />
+    <Content Include="images\sector-image\HEALTH-WELL-BEING-AND-BIOTECH.jpg" />
+    <Content Include="images\sector-image\HEALTH-WELL-BEING.png" />
+    <Content Include="images\sector-image\HEALTH-WELL-BEING_Color.png" />
+    <Content Include="images\sector-image\icon-energy.png" />
+    <Content Include="images\sector-image\MANUFACTURING.jpg" />
+    <Content Include="images\sector-image\MANUFACTURING.png" />
+    <Content Include="images\sector-image\MANUFACTURING_Color.png" />
+    <Content Include="images\sector-image\media-bg.jpg" />
+    <Content Include="images\sector-image\Media.png" />
+    <Content Include="images\sector-image\Media_Color.png" />
+    <Content Include="images\sector-image\MOBILITY.jpg" />
+    <Content Include="images\sector-image\MOBILITY.png" />
+    <Content Include="images\sector-image\MOBILITY_Color.png" />
+    <Content Include="images\sector-image\Sector Images\DESIGN-AND-CONSTRUCTION.jpg" />
+    <Content Include="images\sector-image\Sector Images\EDUCATION.jpg" />
+    <Content Include="images\sector-image\Sector Images\ENERGY.jpg" />
+    <Content Include="images\sector-image\Sector Images\ENTERTAINMENT-AND-CULTURE.jpg" />
+    <Content Include="images\sector-image\Sector Images\FINANCIAL-SERVICES.jpg" />
+    <Content Include="images\sector-image\Sector Images\FOOD.jpg" />
+    <Content Include="images\sector-image\Sector Images\HEALTH-WELL-BEING-AND-BIOTECH.jpg" />
+    <Content Include="images\sector-image\Sector Images\MANUFACTURING.jpg" />
+    <Content Include="images\sector-image\Sector Images\media-bg.jpg" />
+    <Content Include="images\sector-image\Sector Images\MOBILITY.jpg" />
+    <Content Include="images\sector-image\Sector Images\Sports.jpg" />
+    <Content Include="images\sector-image\Sector Images\TECHNOLOGY-AND-DIGITAL.jpg" />
+    <Content Include="images\sector-image\Sector Images\Tourism.jpg" />
+    <Content Include="images\sector-image\Sector Images\Water.jpg" />
+    <Content Include="images\sector-image\Sport.png" />
+    <Content Include="images\sector-image\Sports.jpg" />
+    <Content Include="images\sector-image\Sport_Color.png" />
+    <Content Include="images\sector-image\TECHNOLOGY-AND-DIGITAL.jpg" />
+    <Content Include="images\sector-image\TECHNOLOGY.png" />
+    <Content Include="images\sector-image\TECHNOLOGY_Color.png" />
+    <Content Include="images\sector-image\Tourism.jpg" />
+    <Content Include="images\sector-image\Tourism.png" />
+    <Content Include="images\sector-image\Tourism_Color.png" />
+    <Content Include="images\sector-image\Water.jpg" />
+    <Content Include="images\sector-image\Water.png" />
+    <Content Include="images\sector-image\Water_Color.png" />
+    <Content Include="images\sector-image\windhigh.png" />
+    <Content Include="images\sector-new\Automotive-C.png" />
+    <Content Include="images\sector-new\Automotive-W.png" />
+    <Content Include="images\sector-new\biotechnology-C.png" />
+    <Content Include="images\sector-new\biotechnology-W.png" />
+    <Content Include="images\sector-new\Cement-C.png" />
+    <Content Include="images\sector-new\Cement-W.png" />
+    <Content Include="images\sector-new\Defence-Manufacturing-C.png" />
+    <Content Include="images\sector-new\Defence-Manufacturing-W.png" />
+    <Content Include="images\sector-new\Electronics-C.png" />
+    <Content Include="images\sector-new\Electronics-W.png" />
+    <Content Include="images\sector-new\Food-Processing-C.png" />
+    <Content Include="images\sector-new\Food-Processing-W.png" />
+    <Content Include="images\sector-new\Heavy-Engineering-C.png" />
+    <Content Include="images\sector-new\Heavy-Engineering-W.png" />
+    <Content Include="images\sector-new\IT-C.png" />
+    <Content Include="images\sector-new\IT-W.png" />
+    <Content Include="images\sector-new\Non-Renewable-Energy-C.png" />
+    <Content Include="images\sector-new\Non-Renewable-Energy-W.png" />
+    <Content Include="images\sector-new\Pharmaceuticals-C.png" />
+    <Content Include="images\sector-new\Pharmaceuticals-W.png" />
+    <Content Include="images\sector-new\Renewable-Energy-C.png" />
+    <Content Include="images\sector-new\Renewable-Energy-W.png" />
+    <Content Include="images\sector-new\sector-bg\Agriculture-and-Allied-Industries.jpg" />
+    <Content Include="images\sector-new\sector-bg\Automotive.jpg" />
+    <Content Include="images\sector-new\sector-bg\biotechnology.jpg" />
+    <Content Include="images\sector-new\sector-bg\Cement.jpg" />
+    <Content Include="images\sector-new\sector-bg\Defence-Manufacturing.jpg" />
+    <Content Include="images\sector-new\sector-bg\Electronics.jpg" />
+    <Content Include="images\sector-new\sector-bg\Food-Pro.jpg" />
+    <Content Include="images\sector-new\sector-bg\Heavy-Engineering.jpg" />
+    <Content Include="images\sector-new\sector-bg\Non-Renewable-Energy.jpg" />
+    <Content Include="images\sector-new\sector-bg\Pharmaceuticals.jpg" />
+    <Content Include="images\sector-new\sector-bg\Renewable-Energy.jpg" />
+    <Content Include="images\SECTOR-REG\Aggri.png" />
+    <Content Include="images\SECTOR-REG\Industry.png" />
+    <Content Include="images\SECTOR-REG\Mine.png" />
+    <Content Include="images\SECTOR-REG\Solar.png" />
+    <Content Include="images\speakers\Web-form-image.jpg" />
+    <Content Include="images\speakers\Webminar-Image-1.png" />
+    <Content Include="images\speakers\Webminar-Image-2.png" />
+    <Content Include="images\team\cm-profile.jpg" />
+    <Content Include="images\logo\iclogo.png" />
+    <Content Include="images\videos\agri-video.mp4" />
+    <Content Include="images\videos\BP1.mp4" />
+    <Content Include="images\videos\events\ic-events-1.mp4" />
+    <Content Include="images\videos\events\ic-video.mp4" />
+    <Content Include="images\videos\Explore-Chhattisgarh.mp4" />
+    <Content Include="images\videos\Facetoface.mp4" />
+    <Content Include="images\videos\green-energy.mp4" />
+    <Content Include="images\videos\heavy-engg.mp4" />
+    <Content Include="images\videos\industrialsofar.mp4" />
+    <Content Include="images\videos\map-index.mp4" />
+    <Content Include="images\videos\map.mp4" />
+    <Content Include="images\videos\metal-mining-video.mp4" />
+    <Content Include="images\videos\section-video-2.mp4" />
+    <Content Include="images\videos\video-banner.mp4" />
+    <Content Include="images\videos\video_top.mp4" />
+    <Content Include="index.aspx" />
+    <Content Include="js\commondatastore.js" />
+    <Content Include="js\form.js" />
+    <Content Include="js\icjs.js" />
+    <Content Include="js\jqs.js" />
+    <Content Include="js\signup.js" />
+    <Content Include="js\testing.js" />
+    <Content Include="js\web-reg.js" />
+    <Content Include="logo.html" />
+    <Content Include="mining.aspx" />
+    <Content Include="newsroom.html" />
+    <Content Include="privacypolicy.html" />
+    <Content Include="sector.html" />
+    <Content Include="sign-up.aspx" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+    <Content Include="webfonts\inspiro-icons.svg" />
+    <Content Include="images\Fonts\Fonts\Montserrat-Regular.ttf" />
+    <Content Include="images\Fonts\Fonts\Roboto-Medium.ttf" />
+    <Content Include="images\Fonts\Fonts\Roboto-Regular.ttf" />
+    <Content Include="font\Brown-Bold.eot" />
+    <Content Include="font\Brown-Bold.ttf" />
+    <Content Include="font\Brown-Bold.woff" />
+    <Content Include="font\Brown-Bold.woff2" />
+    <Content Include="font\Brown-BoldAlt.eot" />
+    <Content Include="font\Brown-BoldAlt.ttf" />
+    <Content Include="font\Brown-BoldAlt.woff" />
+    <Content Include="font\Brown-BoldAlt.woff2" />
+    <Content Include="font\Brown-BoldBackslanted-Alt.eot" />
+    <Content Include="font\Brown-BoldBackslanted-Alt.ttf" />
+    <Content Include="font\Brown-BoldBackslanted-Alt.woff" />
+    <Content Include="font\Brown-BoldBackslanted-Alt.woff2" />
+    <Content Include="font\Brown-BoldBackslanted.eot" />
+    <Content Include="font\Brown-BoldBackslanted.ttf" />
+    <Content Include="font\Brown-BoldBackslanted.woff" />
+    <Content Include="font\Brown-BoldBackslanted.woff2" />
+    <Content Include="font\Brown-BoldItalic.eot" />
+    <Content Include="font\Brown-BoldItalic.ttf" />
+    <Content Include="font\Brown-BoldItalic.woff" />
+    <Content Include="font\Brown-BoldItalic.woff2" />
+    <Content Include="font\Brown-BoldItalicAlt.eot" />
+    <Content Include="font\Brown-BoldItalicAlt.ttf" />
+    <Content Include="font\Brown-BoldItalicAlt.woff" />
+    <Content Include="font\Brown-BoldItalicAlt.woff2" />
+    <Content Include="font\Brown-Light.eot" />
+    <Content Include="font\Brown-Light.ttf" />
+    <Content Include="font\Brown-Light.woff" />
+    <Content Include="font\Brown-Light.woff2" />
+    <Content Include="font\Brown-LightBackslanted.eot" />
+    <Content Include="font\Brown-LightBackslanted.ttf" />
+    <Content Include="font\Brown-LightBackslanted.woff" />
+    <Content Include="font\Brown-LightBackslanted.woff2" />
+    <Content Include="font\Brown-LightItalic.eot" />
+    <Content Include="font\Brown-LightItalic.ttf" />
+    <Content Include="font\Brown-LightItalic.woff" />
+    <Content Include="font\Brown-LightItalic.woff2" />
+    <Content Include="font\Brown-Regular.eot" />
+    <Content Include="font\Brown-Regular.ttf" />
+    <Content Include="font\Brown-Regular.woff" />
+    <Content Include="font\Brown-Regular.woff2" />
+    <Content Include="font\Brown-RegularAlt.eot" />
+    <Content Include="font\Brown-RegularAlt.ttf" />
+    <Content Include="font\Brown-RegularAlt.woff" />
+    <Content Include="font\Brown-RegularAlt.woff2" />
+    <Content Include="font\Brown-RegularBackslanted.eot" />
+    <Content Include="font\Brown-RegularBackslanted.ttf" />
+    <Content Include="font\Brown-RegularBackslanted.woff" />
+    <Content Include="font\Brown-RegularBackslanted.woff2" />
+    <Content Include="font\Brown-RegularBackslantedAlt.eot" />
+    <Content Include="font\Brown-RegularBackslantedAlt.ttf" />
+    <Content Include="font\Brown-RegularBackslantedAlt.woff" />
+    <Content Include="font\Brown-RegularBackslantedAlt.woff2" />
+    <Content Include="font\Brown-RegularItalic.eot" />
+    <Content Include="font\Brown-RegularItalic.ttf" />
+    <Content Include="font\Brown-RegularItalic.woff" />
+    <Content Include="font\Brown-RegularItalic.woff2" />
+    <Content Include="font\Brown-RegularItalicAlt.eot" />
+    <Content Include="font\Brown-RegularItalicAlt.ttf" />
+    <Content Include="font\Brown-RegularItalicAlt.woff" />
+    <Content Include="font\Brown-RegularItalicAlt.woff2" />
+    <Content Include="font\Brown-Thin.eot" />
+    <Content Include="font\Brown-Thin.ttf" />
+    <Content Include="font\Brown-Thin.woff" />
+    <Content Include="font\Brown-Thin.woff2" />
+    <Content Include="font\Brown-ThinBackslanted.eot" />
+    <Content Include="font\Brown-ThinBackslanted.ttf" />
+    <Content Include="font\Brown-ThinBackslanted.woff" />
+    <Content Include="font\Brown-ThinBackslanted.woff2" />
+    <Content Include="font\Brown-ThinItalic.eot" />
+    <Content Include="font\Brown-ThinItalic.ttf" />
+    <Content Include="font\Brown-ThinItalic.woff" />
+    <Content Include="font\Brown-ThinItalic.woff2" />
+    <Content Include="images\sector-image\.DS_Store" />
+    <Content Include="images\sector-image\Sector Images.zip" />
+    <Content Include="ic.Master" />
+    <Content Include="pdf\Algorithmforrevisedguidelinesforinternationalarrivals20thOctober2021.pdf" />
+    <Content Include="pdf\guideforinternational.pdf" />
+    <Content Include="pdf\guideline.pdf" />
+    <Content Include="pdf\International-Arrivals.pdf" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="images\banner\ic-banner-2.jpg" />
+    <Content Include="images\banner\ic-banner.jpg" />
+    <Content Include="images\bg-images\economic.jpg" />
+    <Content Include="images\bg-images\Farmer.jpg" />
+    <Content Include="images\bg-images\ic-bg-map.png" />
+    <Content Include="images\bg-images\obj-bg.jpg" />
+    <Content Include="images\bg-images\objectives-bg.jpg" />
+    <Content Include="images\map\China.jpg" />
+    <Content Include="images\map\GR.jpg" />
+    <Content Include="images\map\Uk.jpg" />
+    <Content Include="images\map\US.jpg" />
+    <Content Include="images\sector-image\black-bg.jpg" />
+    <Content Include="images\sector-image\factory.png" />
+    <Content Include="images\sector-image\jcb.png" />
+    <Content Include="images\sector-image\Map-BG.jpg" />
+    <Content Include="images\sector-image\paddy.png" />
+    <Content Include="images\sector-image\windmill.png" />
+    <Content Include="js\functions.js" />
+    <Content Include="js\index.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\plugins.js" />
+    <Content Include="lefttoright.html" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="investgarh.Master" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="Views\web.config" />
+    <Content Include="webfonts\fa-brands-400.eot" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
+    <Content Include="webfonts\inspiro-icons.ttf" />
+    <Content Include="webfonts\inspiro-icons.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="agriculture.aspx.cs">
+      <DependentUpon>agriculture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="agriculture.aspx.designer.cs">
+      <DependentUpon>agriculture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="covid19guide.aspx.cs">
+      <DependentUpon>covid19guide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="covid19guide.aspx.designer.cs">
+      <DependentUpon>covid19guide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAC\clsform.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="explore.aspx.cs">
+      <DependentUpon>explore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="explore.aspx.designer.cs">
+      <DependentUpon>explore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fabrication.aspx.cs">
+      <DependentUpon>fabrication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fabrication.aspx.designer.cs">
+      <DependentUpon>fabrication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="greenenergy.aspx.cs">
+      <DependentUpon>greenenergy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="greenenergy.aspx.designer.cs">
+      <DependentUpon>greenenergy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ic.Master.cs">
+      <DependentUpon>ic.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ic.Master.designer.cs">
+      <DependentUpon>ic.Master</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mining.aspx.cs">
+      <DependentUpon>mining.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mining.aspx.designer.cs">
+      <DependentUpon>mining.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Dbconnection.cs" />
+    <Compile Include="Models\Master.cs" />
+    <Compile Include="Models\TSql.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="investgarh.Master.cs">
+      <DependentUpon>investgarh.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="investgarh.Master.designer.cs">
+      <DependentUpon>investgarh.Master</DependentUpon>
+    </Compile>
+    <Compile Include="sign-up.aspx.cs">
+      <DependentUpon>sign-up.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sign-up.aspx.designer.cs">
+      <DependentUpon>sign-up.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57545</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44399/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
